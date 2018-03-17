@@ -85,7 +85,7 @@ const mainForFuzzing = (n) => {
     let jenkinsToken = process.env.JENKINS_BUILD_TOKEN;
     let githubURL = process.env.GITHUB_URL
     for (var i = 0; i < n; i++) {
-        let javaFiles = getJavaFiles('/Users/Kunal/Desktop/DevOps/Hello/Hello/src/main/edu/ncsu/csc/itrust');
+        let javaFiles = getJavaFiles('/src/main/edu/ncsu/csc/itrust');
         rollbackAndResetCommit(sha1)
         javaFiles.forEach(javaFile =>{
             let rnd = Math.random();
