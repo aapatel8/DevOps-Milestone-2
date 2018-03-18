@@ -6,6 +6,8 @@ export GITHUB_URL=$(git config --get remote.origin.url | sed 's/.git$//')
 export JENKINS_IP=165.227.208.161
 
 if [ $BRANCHNAME = 'master' ]; then
-        curl "http://$JENKINS_IP:8080/git/notifyCommit?url=$GITHUB_URL&branches=fuzzer&sha1=HEAD"
-        node fuzzer.js
+    node fuzzer.js
+    #curl "http://$JENKINS_IP:8080/git/notifyCommit?url=$GITHUB_URL&branches=fuzzer&sha1=HEAD"
+elif [ $BRANCHNAME = 'fuzzer' ]; then
+    curl "http://$JENKINS_IP:8080/git/notifyCommit?url=$GITHUB_URL&branches=fuzzer&sha1=HEAD"
 fi

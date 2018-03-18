@@ -94,7 +94,7 @@ const mainForFuzzing = (n) => {
                 fileFuzzer(javaFile);
         })
         let lastCommitSha1 = commitFuzzer(master_sha1, i);
-        triggerBuild(githubURL, jenkinsIP, jenkinsToken, lastCommitSha1)
+        //triggerBuild(githubURL, jenkinsIP, jenkinsToken, lastCommitSha1)
     }
 }
 
