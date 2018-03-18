@@ -36,8 +36,6 @@ const fileFuzzer = (filePath) => {
 
         if(rnd > 0.65 && !line.match(/@/) && !line.match(/\\/))
             line = line.replace(/(\"[\w\s]+\")/g, '"sampletext"')
-            //line = line.replace(/"([^"strings"]*)"/g, '"sampletext"')
-
 
         rnd = Math.random()
 
