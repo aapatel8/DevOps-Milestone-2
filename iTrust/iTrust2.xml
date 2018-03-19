@@ -13,8 +13,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>git@github.com:sbutler2901/iTrust2-v2-fork.git</url>
-        <credentialsId>b576864a-1a4c-47d5-a330-e91102546c34</credentialsId>
+        <url>https://github.com/sbutler2901/iTrust2-v2-fork.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
