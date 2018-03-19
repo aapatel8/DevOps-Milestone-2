@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 export BRANCHNAME=$(git rev-parse --abbrev-ref HEAD)
 export MASTER_SHA1=$(git rev-parse master)
 export SHA1=$(git rev-parse fuzzer)
@@ -9,5 +9,7 @@ if [ $BRANCHNAME = 'master' ]; then
     node fuzzer.js
     #curl "http://$JENKINS_IP:8080/git/notifyCommit?url=$GITHUB_URL&branches=fuzzer&sha1=HEAD"
 elif [ $BRANCHNAME = 'fuzzer' ]; then
-    curl "http://$JENKINS_IP:8080/git/notifyCommit?url=$GITHUB_URL&branches=fuzzer&sha1=HEAD"
+    #echo "sha1: $SHA1"
+    curl "http://$JENKINS_IP:8080/git/notifyCommit?url=$GITHUB_URL&branches=fuzzer&sha1=$SHA1"
+    echo
 fi
