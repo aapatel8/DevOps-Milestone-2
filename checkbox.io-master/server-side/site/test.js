@@ -50,7 +50,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -67,7 +68,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -84,7 +86,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -101,7 +104,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -118,7 +122,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -135,7 +140,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -152,7 +158,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -169,7 +176,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -187,7 +195,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -208,7 +217,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -229,7 +239,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -247,7 +258,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -264,7 +276,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -281,7 +294,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -298,7 +312,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -315,7 +330,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/load/:id', function(req, response) {
+          
+describe('get /api/study/load/:id', function(req, response) {
 it('Should test study.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -332,7 +348,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -349,7 +366,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -366,7 +384,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -383,7 +402,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -400,7 +420,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -417,7 +438,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -434,7 +456,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -451,7 +474,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -468,7 +492,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -486,7 +511,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -507,7 +533,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -528,7 +555,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -546,7 +574,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -563,7 +592,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -580,7 +610,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -597,7 +628,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -614,7 +646,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/vote/status', function(req, response) {
+          
+describe('get /api/study/vote/status', function(req, response) {
 it('Should test study.voteStatus ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -631,7 +664,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -648,7 +682,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -665,7 +700,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -682,7 +718,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -699,7 +736,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -716,7 +754,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -733,7 +772,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -750,7 +790,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -767,7 +808,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -785,7 +827,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -806,7 +849,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -827,7 +871,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -845,7 +890,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -862,7 +908,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -879,7 +926,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -896,7 +944,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -913,7 +962,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/status/:id', function(req, response) {
+          
+describe('get /api/study/status/:id', function(req, response) {
 it('Should test study.status ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -930,7 +980,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -947,7 +998,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -964,7 +1016,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -981,7 +1034,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -998,7 +1052,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1015,7 +1070,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1032,7 +1088,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1049,7 +1106,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1066,7 +1124,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -1084,7 +1143,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -1105,7 +1165,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -1126,7 +1187,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -1144,7 +1206,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1161,7 +1224,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1178,7 +1242,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1195,7 +1260,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1212,7 +1278,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/listing', function(req, response) {
+          
+describe('get /api/study/listing', function(req, response) {
 it('Should test study.listing ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1229,7 +1296,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1247,7 +1315,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1265,7 +1334,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1283,7 +1353,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1301,7 +1372,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1319,7 +1391,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1337,7 +1410,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1355,7 +1429,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1373,7 +1448,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -1392,7 +1468,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -1414,7 +1491,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -1436,7 +1514,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -1455,7 +1534,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1473,7 +1553,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1491,7 +1572,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1509,7 +1591,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1527,7 +1610,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/create', function(req, response) {
+          
+describe('post /api/study/create', function(req, response) {
 it('Should test create.createStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1546,7 +1630,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1564,7 +1649,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1582,7 +1668,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1600,7 +1687,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1618,7 +1706,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1636,7 +1725,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1654,7 +1744,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1672,7 +1763,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1690,7 +1782,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -1709,7 +1802,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -1731,7 +1825,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -1753,7 +1848,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -1772,7 +1868,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1790,7 +1887,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1808,7 +1906,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1826,7 +1925,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1844,7 +1944,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/vote/submit/', function(req, response) {
+          
+describe('post /api/study/vote/submit/', function(req, response) {
 it('Should test study.submitVote ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1863,7 +1964,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1880,7 +1982,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1897,7 +2000,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1914,7 +2018,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1931,7 +2036,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1948,7 +2054,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -1965,7 +2072,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1982,7 +2090,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -1999,7 +2108,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2017,7 +2127,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -2038,7 +2149,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -2059,7 +2171,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2077,7 +2190,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2094,7 +2208,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2111,7 +2226,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2128,7 +2244,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2145,7 +2262,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/:token', function(req, response) {
+          
+describe('get /api/study/admin/:token', function(req, response) {
 it('Should test admin.loadStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2162,7 +2280,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2179,7 +2298,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2196,7 +2316,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2213,7 +2334,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2230,7 +2352,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2247,7 +2370,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2264,7 +2388,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -2281,7 +2406,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -2298,7 +2424,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2316,7 +2443,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -2337,7 +2465,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -2358,7 +2487,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2376,7 +2506,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2393,7 +2524,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2410,7 +2542,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2427,7 +2560,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2444,7 +2578,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/download/:token', function(req, response) {
+          
+describe('get /api/study/admin/download/:token', function(req, response) {
 it('Should test admin.download ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2461,7 +2596,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2478,7 +2614,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2495,7 +2632,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2512,7 +2650,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2529,7 +2668,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2546,7 +2686,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2563,7 +2704,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -2580,7 +2722,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -2597,7 +2740,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2615,7 +2759,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -2636,7 +2781,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -2657,7 +2803,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2675,7 +2822,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2692,7 +2840,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2709,7 +2858,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2726,7 +2876,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2743,7 +2894,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('get /api/study/admin/assign/:token', function(req, response) {
+          
+describe('get /api/study/admin/assign/:token', function(req, response) {
 it('Should test admin.assignWinner ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2760,7 +2912,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2778,7 +2931,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2796,7 +2950,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2814,7 +2969,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2832,7 +2988,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2850,7 +3007,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -2868,7 +3026,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -2886,7 +3045,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -2904,7 +3064,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2923,7 +3084,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -2945,7 +3107,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -2967,7 +3130,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -2986,7 +3150,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3004,7 +3169,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3022,7 +3188,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3040,7 +3207,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3058,7 +3226,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/open/', function(req, response) {
+          
+describe('post /api/study/admin/open/', function(req, response) {
 it('Should test admin.openStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3077,7 +3246,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3095,7 +3265,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3113,7 +3284,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3131,7 +3303,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3149,7 +3322,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3167,7 +3341,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3185,7 +3360,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -3203,7 +3379,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -3221,7 +3398,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -3240,7 +3418,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -3262,7 +3441,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -3284,7 +3464,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -3303,7 +3484,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3321,7 +3503,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3339,7 +3522,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3357,7 +3541,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3375,7 +3560,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/close/', function(req, response) {
+          
+describe('post /api/study/admin/close/', function(req, response) {
 it('Should test admin.closeStudy ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3394,7 +3580,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey", "adminLink": "DevOps.projectSpring18@gmail.com"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3412,7 +3599,8 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3430,7 +3618,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3448,7 +3637,8 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3466,7 +3656,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip":"cba", "fingerprint": "fingerprint"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3484,7 +3675,8 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3502,7 +3694,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -3520,7 +3713,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
              if (err) return handleError(err);
@@ -3538,7 +3732,8 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, voteDoc) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -3557,7 +3752,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, function (err, studyDoc) {
@@ -3579,7 +3775,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, function (err, studyDoc) {
@@ -3601,7 +3798,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
                   });
               });
           });
-          });
+          
+});
 describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
@@ -3620,7 +3818,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3638,7 +3837,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3656,7 +3856,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3674,7 +3875,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);
@@ -3692,7 +3894,8 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
                   });
               });
           });
-          describe('post /api/study/admin/notify/', function(req, response) {
+          
+describe('post /api/study/admin/notify/', function(req, response) {
 it('Should test admin.notifyParticipant ', function(done) {
 StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) {
              if (err) return handleError(err);

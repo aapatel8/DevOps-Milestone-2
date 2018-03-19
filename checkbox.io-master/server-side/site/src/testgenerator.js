@@ -179,7 +179,7 @@ function generateTestCases(filepath, routConstraints) {
                   });
               });
           });
-          `;
+          \n`;
           if(mock == 'both1' || mock == 'both2' || mock == 'both3')
           content += "});\n"
         }
