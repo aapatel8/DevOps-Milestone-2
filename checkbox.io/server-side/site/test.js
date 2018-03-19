@@ -1,4 +1,4 @@
-let server = require('D:\NCSU\DevOps519\Project\ProjectonGIT\csc519-cm-test\checkbox.io-master\server-side\site\server.js')
+let server = require('D:\NCSU\DevOps519\Project\ProjectonGIT\csc519-cm-test\checkbox.io\server-side\site\server.js')
 let expect = require('chai').expect;
     let request = require('supertest');
     var mongoose = require('mongoose');
@@ -40,7 +40,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -58,7 +58,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/' + studyDoc._id)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -76,7 +76,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -94,7 +94,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -112,7 +112,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -130,7 +130,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              request(server)
              .get('/api/study/load/' + studyDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -148,7 +148,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/load/' + voteDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -166,7 +166,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/load/' + voteDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -185,7 +185,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -207,7 +207,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              request(server)
              .get('/api/study/load/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -229,7 +229,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              request(server)
              .get('/api/study/load/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -248,7 +248,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -266,7 +266,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -284,7 +284,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -302,7 +302,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -320,7 +320,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -338,7 +338,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/load/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -356,7 +356,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -374,7 +374,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status' + studyDoc._id)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -392,7 +392,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -410,7 +410,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -428,7 +428,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -446,7 +446,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              request(server)
              .get('/api/study/vote/status' + studyDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -464,7 +464,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/vote/status' + voteDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -482,7 +482,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/vote/status' + voteDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -501,7 +501,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -523,7 +523,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              request(server)
              .get('/api/study/vote/status' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -545,7 +545,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              request(server)
              .get('/api/study/vote/status' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -564,7 +564,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -582,7 +582,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -600,7 +600,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -618,7 +618,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -636,7 +636,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -654,7 +654,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/vote/status')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -672,7 +672,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -690,7 +690,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/' + studyDoc._id)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -708,7 +708,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -726,7 +726,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -744,7 +744,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -762,7 +762,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              request(server)
              .get('/api/study/status/' + studyDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -780,7 +780,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/status/' + voteDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -798,7 +798,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/status/' + voteDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -817,7 +817,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -839,7 +839,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              request(server)
              .get('/api/study/status/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -861,7 +861,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              request(server)
              .get('/api/study/status/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -880,7 +880,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -898,7 +898,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -916,7 +916,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -934,7 +934,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -952,7 +952,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -970,7 +970,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/status/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -988,7 +988,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1006,7 +1006,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing' + studyDoc._id)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1024,7 +1024,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1042,7 +1042,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1060,7 +1060,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1078,7 +1078,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              request(server)
              .get('/api/study/listing' + studyDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1096,7 +1096,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/listing' + voteDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1114,7 +1114,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/listing' + voteDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1133,7 +1133,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1155,7 +1155,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              request(server)
              .get('/api/study/listing' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1177,7 +1177,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              request(server)
              .get('/api/study/listing' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1196,7 +1196,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1214,7 +1214,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1232,7 +1232,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1250,7 +1250,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1268,7 +1268,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1286,7 +1286,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/listing')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1305,7 +1305,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              .post('/api/study/create')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1324,7 +1324,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create' + studyDoc._id)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1343,7 +1343,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              .post('/api/study/create')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1362,7 +1362,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1381,7 +1381,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              .post('/api/study/create')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1400,7 +1400,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              .post('/api/study/create' + studyDoc.studyId)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1419,7 +1419,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/create' + voteDoc.studyId)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1438,7 +1438,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/create' + voteDoc.token)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1458,7 +1458,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create')
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1481,7 +1481,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              .post('/api/study/create' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1504,7 +1504,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              .post('/api/study/create' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1524,7 +1524,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"AMZN"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1543,7 +1543,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"SURFACE"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1562,7 +1562,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"IPADMINI"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1581,7 +1581,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"GITHUB"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1600,7 +1600,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/create')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"BROWSERSTACK"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1620,7 +1620,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .send({"studyId": new mongoose.Types.ObjectId(), "timestamp": new Date(), "ip": "ip", "fingerprint": "fingerprint",
 "answers": "{\"name\":\"Devops\"}", "email": "DevOps.projectSpring18@gmail.com", "contact": "Devops"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1639,7 +1639,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              .post('/api/study/vote/submit/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1658,7 +1658,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/' + studyDoc._id)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1677,7 +1677,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              .post('/api/study/vote/submit/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1696,7 +1696,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1715,7 +1715,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              .post('/api/study/vote/submit/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1734,7 +1734,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              .post('/api/study/vote/submit/' + studyDoc.studyId)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1753,7 +1753,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/vote/submit/' + voteDoc.studyId)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1772,7 +1772,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/vote/submit/' + voteDoc.token)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1792,7 +1792,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/')
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1815,7 +1815,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              .post('/api/study/vote/submit/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1838,7 +1838,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              .post('/api/study/vote/submit/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1858,7 +1858,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"AMZN"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1877,7 +1877,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"SURFACE"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1896,7 +1896,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"IPADMINI"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1915,7 +1915,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"GITHUB"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1934,7 +1934,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/vote/submit/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"BROWSERSTACK"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1954,7 +1954,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .send({"studyId": new mongoose.Types.ObjectId(), "timestamp": new Date(), "ip": "ip", "fingerprint": "fingerprint",
 "answers": "{\"name\":\"Devops\"}", "email": "DevOps.projectSpring18@gmail.com", "contact": "Devops"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1972,7 +1972,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -1990,7 +1990,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/' + studyDoc._id)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2008,7 +2008,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2026,7 +2026,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2044,7 +2044,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2062,7 +2062,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              request(server)
              .get('/api/study/admin/' + studyDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2080,7 +2080,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/admin/' + voteDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2098,7 +2098,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/admin/' + voteDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2117,7 +2117,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2139,7 +2139,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              request(server)
              .get('/api/study/admin/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2161,7 +2161,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              request(server)
              .get('/api/study/admin/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2180,7 +2180,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2198,7 +2198,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2216,7 +2216,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2234,7 +2234,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2252,7 +2252,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2270,7 +2270,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2288,7 +2288,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2306,7 +2306,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/' + studyDoc._id)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2324,7 +2324,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2342,7 +2342,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2360,7 +2360,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2378,7 +2378,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              request(server)
              .get('/api/study/admin/download/' + studyDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2396,7 +2396,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/admin/download/' + voteDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2414,7 +2414,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/admin/download/' + voteDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2433,7 +2433,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2455,7 +2455,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              request(server)
              .get('/api/study/admin/download/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2477,7 +2477,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              request(server)
              .get('/api/study/admin/download/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2496,7 +2496,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2514,7 +2514,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2532,7 +2532,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2550,7 +2550,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2568,7 +2568,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2586,7 +2586,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/download/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2604,7 +2604,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2622,7 +2622,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/' + studyDoc._id)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2640,7 +2640,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2658,7 +2658,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2676,7 +2676,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2694,7 +2694,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              request(server)
              .get('/api/study/admin/assign/' + studyDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2712,7 +2712,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/admin/assign/' + voteDoc.studyId)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2730,7 +2730,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              request(server)
              .get('/api/study/admin/assign/' + voteDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2749,7 +2749,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2771,7 +2771,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              request(server)
              .get('/api/study/admin/assign/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2793,7 +2793,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              request(server)
              .get('/api/study/admin/assign/' + studyDoc.token)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2812,7 +2812,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2830,7 +2830,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2848,7 +2848,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2866,7 +2866,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2884,7 +2884,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2902,7 +2902,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              request(server)
              .get('/api/study/admin/assign/')
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2921,7 +2921,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              .post('/api/study/admin/open/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2940,7 +2940,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/' + studyDoc._id)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2959,7 +2959,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              .post('/api/study/admin/open/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2978,7 +2978,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -2997,7 +2997,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              .post('/api/study/admin/open/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3016,7 +3016,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              .post('/api/study/admin/open/' + studyDoc.studyId)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3035,7 +3035,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/admin/open/' + voteDoc.studyId)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3054,7 +3054,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/admin/open/' + voteDoc.token)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3074,7 +3074,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/')
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3097,7 +3097,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              .post('/api/study/admin/open/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3120,7 +3120,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              .post('/api/study/admin/open/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3140,7 +3140,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"AMZN"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3159,7 +3159,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"SURFACE"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3178,7 +3178,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"IPADMINI"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3197,7 +3197,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"GITHUB"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3216,7 +3216,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/open/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"BROWSERSTACK"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3236,7 +3236,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .send({"studyId": new mongoose.Types.ObjectId(), "timestamp": new Date(), "ip": "ip", "fingerprint": "fingerprint",
 "answers": "{\"name\":\"Devops\"}", "email": "DevOps.projectSpring18@gmail.com", "contact": "Devops"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3255,7 +3255,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              .post('/api/study/admin/close/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3274,7 +3274,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/' + studyDoc._id)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3293,7 +3293,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              .post('/api/study/admin/close/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3312,7 +3312,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3331,7 +3331,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              .post('/api/study/admin/close/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3350,7 +3350,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              .post('/api/study/admin/close/' + studyDoc.studyId)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3369,7 +3369,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/admin/close/' + voteDoc.studyId)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3388,7 +3388,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/admin/close/' + voteDoc.token)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3408,7 +3408,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/')
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3431,7 +3431,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              .post('/api/study/admin/close/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3454,7 +3454,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              .post('/api/study/admin/close/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3474,7 +3474,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"AMZN"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3493,7 +3493,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"SURFACE"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3512,7 +3512,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"IPADMINI"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3531,7 +3531,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"GITHUB"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3550,7 +3550,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/close/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"BROWSERSTACK"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3570,7 +3570,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .send({"studyId": new mongoose.Types.ObjectId(), "timestamp": new Date(), "ip": "ip", "fingerprint": "fingerprint",
 "answers": "{\"name\":\"Devops\"}", "email": "DevOps.projectSpring18@gmail.com", "contact": "Devops"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3589,7 +3589,7 @@ StudyModel.create({"token":"abc", "invitecode":"RESEARCH", "studyKind":"survey",
              .post('/api/study/admin/notify/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3608,7 +3608,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/' + studyDoc._id)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3627,7 +3627,7 @@ StudyModel.create({"token":"abc"}, function (err, studyDoc) {
              .post('/api/study/admin/notify/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3646,7 +3646,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3665,7 +3665,7 @@ VoteModel.create({"studyId": new mongo.ObjectID("5aaca3a4aaea66439ce5e91b"), "ip
              .post('/api/study/admin/notify/')
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3684,7 +3684,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, stud
              .post('/api/study/admin/notify/' + studyDoc.studyId)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3703,7 +3703,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/admin/notify/' + voteDoc.studyId)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3722,7 +3722,7 @@ VoteModel.create({"studyId": new mongoose.Types.ObjectId()}, function (err, vote
              .post('/api/study/admin/notify/' + voteDoc.token)
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3742,7 +3742,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/')
              .send(voteDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3765,7 +3765,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"survey"}, fun
              .post('/api/study/admin/notify/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3788,7 +3788,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba", "studyKind":"dataStudy"}, 
              .post('/api/study/admin/notify/' + studyDoc.token)
              .send(studyDoc)
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3808,7 +3808,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"AMZN"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3827,7 +3827,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"SURFACE"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3846,7 +3846,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"IPADMINI"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3865,7 +3865,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"GITHUB"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3884,7 +3884,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .post('/api/study/admin/notify/')
              .send({"email": "DevOps.projectSpring18@gmail.com", "kind":"BROWSERSTACK"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -3904,7 +3904,7 @@ StudyModel.create({"token":"abc", "invitecode":"cba"}, function (err, studyDoc) 
              .send({"studyId": new mongoose.Types.ObjectId(), "timestamp": new Date(), "ip": "ip", "fingerprint": "fingerprint",
 "answers": "{\"name\":\"Devops\"}", "email": "DevOps.projectSpring18@gmail.com", "contact": "Devops"})
              .expect(200)
-            .then(response => {
+             .then(response => {
                               done();
                       })
                       .catch(function () {
