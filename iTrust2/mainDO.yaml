@@ -1,0 +1,10 @@
+---
+- hosts:
+    - local
+
+  tasks:
+    - name: npm install
+      shell: npm install
+
+    - name: Run script to create droplet and store droplet info
+      shell: node mainDO.js
