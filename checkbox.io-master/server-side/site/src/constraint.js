@@ -45,13 +45,14 @@ function constraints(filePath) {
         if (node.type === 'ExpressionStatement' && node.expression.type === 'CallExpression' && node.expression.callee.property
             && (node.expression.callee.property.name === 'get'
             || (node.expression.callee.property.name === 'post' && node.expression.arguments[0].value != '/api/design/survey'
-          ))){ //&& node.expression.arguments[0].value != '/api/study/vote/submit/'
+          ))){
             //console.log(node);
 
             let route = node.expression.arguments[node.expression.arguments.length-1].object.name + '.' + node.expression.arguments[node.expression.arguments.length-1].property.name;
             routeConstraints[route] = {
                 mockpath: null,
-                route: route
+                route: route,
+                action: null
             };
             //console.log(routeConstraints);
             //console.log(routeConstraints.constraints);
@@ -67,12 +68,7 @@ function constraints(filePath) {
                     let mockpath = child.arguments[0].value;
                     let route = child.arguments[child.arguments.length-1].object.name + '.' + child.arguments[child.arguments.length-1].property.name;
 
-                    //console.log(expression);
-                    //console.log(action);
-                    //console.log(mockpath);
-                    //console.log(callee);
-                    //console.log(mockpath);
-                    //console.log(route);
+                  
                     routeConstraints[route].mockpath = child.arguments[0].value;
                     routeConstraints[route].action = child.callee.property.name;
 

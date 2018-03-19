@@ -1,8 +1,6 @@
-let server = require('D:\NCSU\DevOps519\Project\Testgeneration\checkbox.io-master\checkbox.io-master\server-side\site\server.js')
+let server = require('D:\NCSU\DevOps519\Project\ProjectonGIT\csc519-cm-test\checkbox.io-master\server-side\site\server.js')
 let expect = require('chai').expect;
     let request = require('supertest');
-    let express = require('express');
-    let assert = require('assert');
     var mongoose = require('mongoose');
 
     var mongo = require('mongodb');

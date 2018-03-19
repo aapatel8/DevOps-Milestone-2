@@ -112,8 +112,6 @@ function generateTestCases(filepath, routConstraints) {
     // Content string. This will be built up to generate the full text of the test string.
     let content = `let server = require('${filepath}')\nlet expect = require('chai').expect;
     let request = require('supertest');
-    let express = require('express');
-    let assert = require('assert');
     var mongoose = require('mongoose');
 
     var mongo = require('mongodb');
