@@ -47,7 +47,6 @@
       template:
         src: templates/hibernate.properties.template
         dest: /var/lib/jenkins/workspace/templates/hibernate.properties
-        # dest: /root/iTrust2-v2-fork/iTrust2/src/main/resources/hibernate.properties
         mode: 0644
         owner: jenkins
 
@@ -55,7 +54,6 @@
       template:
         src: templates/db.properties.template
         dest: /var/lib/jenkins/workspace/templates/db.properties
-        # dest: /root/iTrust2-v2-fork/iTrust2/src/main/java/db.properties
         mode: 0644
         owner: jenkins
 
@@ -63,17 +61,15 @@
       template:
         src: templates/email.properties.template
         dest: /var/lib/jenkins/workspace/templates/email.properties
-        # dest: /root/iTrust2-v2-fork/iTrust2/src/main/java/email.properties
         mode: 0644
         owner: jenkins
 
     - name: Add my.cnf for mysql
       template:
         src: templates/my.cnf
-        #dest: /var/lib/jenkins/workspace/templates/.my.cnf
-        dest: /root/.my.cnf
+        dest: /var/lib/jenkins/workspace/templates/my.cnf
         mode: 0644
-        # owner: jenkins
+        owner: jenkins
 
     - name: Add mysql user
       mysql_user:

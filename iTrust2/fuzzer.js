@@ -22,7 +22,7 @@ const getJavaFiles = (dirPath)=>{
             javaFiles.push(file)
         }
     })
-    console.log(javaFiles);
+    //console.log(javaFiles);
     return javaFiles;
 }
 
@@ -31,31 +31,34 @@ const fileFuzzer = (filePath) => {
     let linesinFile = fs.readFileSync(filePath, 'utf8').split(/\r?\n/)
     fs.writeFileSync(filePath, '', {encoding:'utf8'});
 
-    linesinFile.forEach(line=>{
+    linesinFile.forEach( line => {
         let rnd = Math.random();
-        let desiredFreq = 0.45;
+        let desiredFreq = 0.5;
         let freq = 1 - desiredFreq;
 
-        if(rnd > freq && !line.match(/@/) && !line.match(/\\/))
+        if( rnd > freq && !line.match(/@/) && !line.match(/\\/))
             line = line.replace(/(\"[\w\s]+\")/g, '"sampletext"')
-            //line = line.replace(/"([^"strings"]*)"/g, '"sampletext"')
-
 
         rnd = Math.random()
 
-        if(rnd > freq && !line.match(/<.+>/) && (line.match(/while/) || line.match(/if/)))
-            line = line.replace('<', '>')
-        else if(rnd < freq && !line.match(/<.+>/) && (line.match(/while/) || line.match(/if/)))
-            line = line.replace('>', '<')
+        if ( !line.match(/<.+>/) && (line.match(/while/) || line.match(/if/)) ) {
+            if ( rnd > freq ) 
+                line = line.replace('<', '>')
+            else
+                line = line.replace('>', '<')
+        }
 
         rnd = Math.random()
+
+        if ( line.match(/![^=]/g) )
+            line = line.replace('!', '');
 
         if(rnd > freq)
             line = line.replace('==', '!=')
         else
             line = line.replace('!=', '==')       
     
-        if(line != '\r')
+        if(line != '\r' && line != '\n' && line != '')
             line += '\n'
 
         fs.appendFileSync(filePath, line, {encoding:'utf8'});
@@ -94,7 +97,10 @@ const mainForFuzzing = (n) => {
         rollbackAndResetCommit(sha1)
         javaFiles.forEach(javaFile =>{
             let rnd = Math.random();
-            if(rnd > 0.80)
+            let desiredFreq = 1;
+            let freq = 1 - desiredFreq;
+
+            if(rnd > freq)
                 fileFuzzer(javaFile);
         })
         let lastCommitSha1 = commitFuzzer(master_sha1, i);
@@ -102,4 +108,4 @@ const mainForFuzzing = (n) => {
     }
 }
 
-mainForFuzzing(5);
+mainForFuzzing(3);

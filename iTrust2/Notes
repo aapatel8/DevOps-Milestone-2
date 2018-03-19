@@ -1,0 +1,3 @@
+source ./environmentVariables.sh
+ansible-playbook -i inventoryLocal -c local mainDO.yaml
+ansible-playbook -i inventory setUpJenkins_playbook.yml -l main
