@@ -36,41 +36,41 @@ const fileFuzzer = (filePath) => {
         let desiredFreq = 0.5;
         let freq = 1 - desiredFreq;
 
-        /*if( rnd > freq && !line.match(/@/) && !line.match(/\\/))
-            line = line.replace(/(\"[\w\s]+\")/g, '"sampletext"');*/
+        if( rnd > freq && !line.match(/@/) && !line.match(/\\/))
+            line = line.replace(/(\"[\w\s]+\")/g, '"sampletext"')
 
         rnd = Math.random()
 
-        /*if ( !line.match(/<.+>/) && (line.match(/while/) || line.match(/if/)) ) {
+        if ( !line.match(/<.+>/) && (line.match(/while/) || line.match(/if/)) ) {
             if ( rnd > freq ) 
-                line = line.replace('<', '>');
+                line = line.replace('<', '>')
             else
-                line = line.replace('>', '<');
-        }*/
+                line = line.replace('>', '<')
+        }
 
         rnd = Math.random()
 
         if ( rnd > 0 && line.match(/![a-zA-Z]/g)) {
             //console.log("line before: %s\n", line);
             line = line.replace(/![a-zA-Z]/g, (matchedString, offset, line) => {
-                console.log("File %s having %s replaced", filePath, matchedString);
+                //console.log("File %s having %s replaced", filePath, matchedString);
                 return matchedString.slice(1);
             });
         }
 
-            /*if(rnd > freq)
-            line = line.replace(/==/g, '!=');
+        if(rnd > freq)
+            line = line.replace(/==/g, '!=')
         else
-            line = line.replace(/!=/g, '==');*/
+            line = line.replace(/!=/g, '==')       
     
         if(line != '\r' && line != '\n' && line != '')
-            line += '\n';
+            line += '\n'
 
         fs.appendFileSync(filePath, line, {encoding:'utf8'});
     })
 }
 const commitFuzzer = (master_sha1, n) => {
-    child_process.execSync(`git stash && git checkout fuzzer && git checkout stash -- . && git commit -am "Commit Number ${n}: Fuzzing master:${master_sha1}" && git push --force`)
+    child_process.execSync(`git stash && git checkout fuzzer && git checkout stash -- . && git commit -am "Commit Number ${n}: Fuzzing master:${master_sha1}" && git push`)
     child_process.execSync('git stash drop');
     let lastCommitSha1 = child_process.execSync(`git rev-parse fuzzer`).toString().trim()
     return lastCommitSha1;
@@ -98,19 +98,11 @@ const getSha = () => {
 }
 
 const commit = (master_sha1, n) => {
-    try {
-        child_process.execSync(`git add . && git commit -m "Commit Number ${n}: Fuzzing master:${master_sha1}" && git push --force`);
-    } catch (err) {
-      console.error("commit error: " + err.message);
-    }
+    child_process.execSync(`git commit -am "Commit Number ${n}: Fuzzing master:${master_sha1}" && git push --force`);
 }
 
 const revert = (sha1) => {
-    child_process.execSync(`git revert --no-edit --no-commit ${sha1}..HEAD`);
-}
-
-const checkout = (sha1) => {
-    child_process.execSync(`git checkout -f ${sha1}`);
+    child_process.execSync(`git revert --no-edit ${sha1}..HEAD`);
 }
 
 const mainForFuzzing = (n) => {
@@ -123,10 +115,10 @@ const mainForFuzzing = (n) => {
     rebase();
     let sha1 = getSha();
 
-    for (var i = 0; i < n; i++) {
+    for (var i = 1; i <= n; i++) {
         let javaFiles = getJavaFiles(__dirname + '/iTrust2/src/main/java/edu/ncsu/csc/itrust2');
-        rollbackAndResetCommit(sha1)
-        //reset(master_sha1);
+        //rollbackAndResetCommit(sha1)
+        ///reset(master_sha1);
         javaFiles.forEach(javaFile =>{
             let rnd = Math.random();
             let desiredFreq = 1;
@@ -134,18 +126,12 @@ const mainForFuzzing = (n) => {
 
             if(rnd > freq)
                 fileFuzzer(javaFile);
-        });
-        //console.log("about to commit and push at index %d", i);
-        //commit(master_sha1,i);
-        //rebase();
-        //revert(sha1);
-        let lastCommitSha1 = commitFuzzer(master_sha1, i);
-        //checkout(sha1);
-        //revert(sha1);
-        //rebase();
+        })
+        commit(master_sha1,i);
+        revert(sha1);
+        //let lastCommitSha1 = commitFuzzer(master_sha1, i);
         //triggerBuild(githubURL, jenkinsIP, jenkinsToken, lastCommitSha1)
     }
 }
 
-mainForFuzzing(3);
-
+mainForFuzzing(2);
