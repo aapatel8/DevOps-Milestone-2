@@ -23,9 +23,6 @@ function readResults(result)
 
 async function calculatePriority()
 {
-    // try{
-    //     child.execSync('cd simplecalc & mvn test');
-    // }catch(e){}
     var tests = [];
     for(i = 100; i <= 150; i++){
         var testReport =  '/var/lib/jenkins/jobs/iTrust2/builds/' + i + '/build.xml';
