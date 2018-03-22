@@ -4,8 +4,8 @@
   vars:
     mysql_user: jenkins
     mysql_password: "{{ lookup('env','MYSQL_PASS') }}"
-    email_username: aapatel8@ncsu.edu
-    email_password:
+    email_username: "{{ lookup('env','MAIL_USER') }}"
+    email_password: "{{ lookup('env','MAIL_PASSWORD') }}"
     jenkins_pass: "{{ lookup('env','JENKINS_PASS') }}"
     packages:
       - git
@@ -13,14 +13,20 @@
       - maven
       - mysql-server-5.7
       - python-mysqldb
+      - nodejs
       - python-pip
       - python3-lxml
+      - nodejs
+      - software-properties-common
 
     pippackages:
       - python-jenkins
       - lxml
   
   tasks:
+    - name: Get nodejs package
+      shell: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
     - name: Install packages
       become: yes
       apt:
@@ -28,7 +34,7 @@
         state: present
         update_cache: yes
       with_items: "{{ packages }}"
-    
+
     - name: Install remaining packages
       become: yes
       pip:
@@ -67,7 +73,21 @@
     - name: Add my.cnf for mysql
       template:
         src: templates/my.cnf
-        dest: /var/lib/jenkins/workspace/templates/my.cnf
+        dest: /root/.my.cnf
+        mode: 0644
+        owner: jenkins
+
+    - name: Copy pom.xml.orig
+      copy:
+        src: templates/pom.xml.orig
+        dest: /var/lib/jenkins/workspace/templates/pom.xml.orig
+        mode: 0644
+        owner: jenkins
+
+    - name: Copy pom.xml.data
+      copy:
+        src: templates/pom.xml.data
+        dest: /var/lib/jenkins/workspace/templates/pom.xml.data
         mode: 0644
         owner: jenkins
 
@@ -97,5 +117,5 @@
         config: "{{ lookup('file', 'iTrust2.xml') }}"
         name: iTrust2
         password: "{{ jenkins_pass }}"
-        url: http://localhost:8080/
+        url: http://localhost:8008/
         user: admin

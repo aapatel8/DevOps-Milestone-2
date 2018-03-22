@@ -5,7 +5,7 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.0">
-      <projectUrl>https://github.com/sbutler2901/iTrust2-v2-fork/</projectUrl>
+      <projectUrl>https://github.com/aapatel8/iTrust2-v2-fork/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
   </properties>
@@ -13,18 +13,18 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/sbutler2901/iTrust2-v2-fork.git</url>
+        <url>https://github.com/aapatel8/iTrust2-v2-fork.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/fuzzer</name>
+        <name>*/master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <submoduleCfg class="list"/>
     <extensions>
-      <hudson.plugins.git.extensions.impl.CleanCheckout/>
+      <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
     </extensions>
   </scm>
   <canRoam>true</canRoam>
@@ -40,14 +40,45 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cp ../templates/hibernate.properties iTrust2/src/main/resources/hibernate.properties
-cp ../templates/db.properties iTrust2/src/main/resources/db.properties
-cp ../templates/email.properties iTrust2/src/main/resources/email.properties
-cp ../templates/.my.cnf iTrust2/src/main/resources/.my.cnf
-cd iTrust2/
-mvn clean test verify checkstyle:checkstyle</command>
+      <command>cd /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/
+        cp /var/lib/jenkins/workspace/templates/hibernate.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/resources/hibernate.properties
+        cp /var/lib/jenkins/workspace/templates/db.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/java/db.properties
+        cp /var/lib/jenkins/workspace/templates/email.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/java/email.properties
+        cp /var/lib/jenkins/workspace/templates/pom.xml.data /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/pom.xml
+        mvn clean process-test-classes
+        cp /var/lib/jenkins/workspace/templates/pom.xml.orig /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/pom.xml
+        mvn test verify checkstyle:checkstyle</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.0.1">
+      <execPattern>**/target/coverage-reports/jacoco-it.exec, **/target/coverage-reports/jacoco-ut.exec</execPattern>
+      <classPattern>**/target/classes</classPattern>
+      <sourcePattern>**/src/main/java</sourcePattern>
+      <inclusionPattern></inclusionPattern>
+      <exclusionPattern></exclusionPattern>
+      <skipCopyOfSrcFiles>false</skipCopyOfSrcFiles>
+      <minimumInstructionCoverage>0</minimumInstructionCoverage>
+      <minimumBranchCoverage>0</minimumBranchCoverage>
+      <minimumComplexityCoverage>0</minimumComplexityCoverage>
+      <minimumLineCoverage>0</minimumLineCoverage>
+      <minimumMethodCoverage>0</minimumMethodCoverage>
+      <minimumClassCoverage>0</minimumClassCoverage>
+      <maximumInstructionCoverage>0</maximumInstructionCoverage>
+      <maximumBranchCoverage>0</maximumBranchCoverage>
+      <maximumComplexityCoverage>0</maximumComplexityCoverage>
+      <maximumLineCoverage>0</maximumLineCoverage>
+      <maximumMethodCoverage>0</maximumMethodCoverage>
+      <maximumClassCoverage>0</maximumClassCoverage>
+      <changeBuildStatus>false</changeBuildStatus>
+      <deltaInstructionCoverage>0</deltaInstructionCoverage>
+      <deltaBranchCoverage>0</deltaBranchCoverage>
+      <deltaComplexityCoverage>0</deltaComplexityCoverage>
+      <deltaLineCoverage>0</deltaLineCoverage>
+      <deltaMethodCoverage>0</deltaMethodCoverage>
+      <deltaClassCoverage>0</deltaClassCoverage>
+      <buildOverBuild>false</buildOverBuild>
+    </hudson.plugins.jacoco.JacocoPublisher>
+  </publishers>
   <buildWrappers/>
 </project>

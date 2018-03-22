@@ -9,12 +9,12 @@
       - default-jdk
       - git
       - maven
-      - nodejs
 
-    jenkins_java_args: 'JAVA_ARGS="-Djava.awt.headless=true -Djenkins.install.runSetupWizard=false -Xmx512m"'
+    jenkins_java_args: 'JAVA_ARGS="-Djava.awt.headless=true -Djenkins.install.runSetupWizard=false -Xmx1024m"'
+    jenkins_port_args: 'HTTP_PORT=8008'
     jenkins_home: /var/lib/jenkins
     jenkins_hostname: localhost
-    jenkins_http_port: 8080
+    jenkins_http_port: 8008
     jenkins_admin_username: admin
     jenkins_admin_password: admin
     jenkins_jar_location: /root/jenkins-cli.jar
@@ -25,8 +25,6 @@
       validate_certs: no
 
   tasks:
-      - name: Get nodejs package
-        shell: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
       - name: Pre-Installing necessary softwares
         apt: pkg={{ item }} state=present
@@ -83,6 +81,13 @@
           line: "{{ jenkins_java_args }}"
         become: yes
 
+      - name: Configure port
+        lineinfile:
+          dest: /etc/default/jenkins
+          regexp: '^HTTP_PORT='
+          line: "{{ jenkins_port_args }}"
+        become: yes
+
       - name: Immediately restart jenkins
         service: name=jenkins state=restarted
         become: yes
@@ -119,16 +124,16 @@
           state: absent
         become: yes
 
-      - name: fix a defect to disable setup wizard
-        jenkins_script:
-          script: |
-            import static jenkins.model.Jenkins.instance as jenkins
-            import jenkins.install.InstallState
-            if (!jenkins.installState.isSetupComplete()) {
-              InstallState.INITIAL_SETUP_COMPLETED.initializeState()
-            }
-          user: "{{ jenkins_admin_username }}"
-          password: "{{ jenkins_admin_password }}"
+      # - name: fix a defect to disable setup wizard
+      #   jenkins_script:
+      #     script: |
+      #       import static jenkins.model.Jenkins.instance as jenkins
+      #       import jenkins.install.InstallState
+      #       if (!jenkins.installState.isSetupComplete()) {
+      #         InstallState.INITIAL_SETUP_COMPLETED.initializeState()
+      #       }
+      #     user: "{{ jenkins_admin_username }}"
+      #     password: "{{ jenkins_admin_password }}"
 
       - name: Get Jenkins client Jar file
         get_url:
@@ -137,31 +142,31 @@
           mode: 755
         become: yes
 
-      - name: Immediately restart jenkins
-        service: name=jenkins state=restarted
-        become: yes
+      # - name: Immediately restart jenkins
+      #   service: name=jenkins state=restarted
+      #   become: yes
 
-      - name: Wait for jenkins to start
-        wait_for: port={{ jenkins_http_port }} delay=30
-        become: yes
+      # - name: Wait for jenkins to start
+      #   wait_for: port={{ jenkins_http_port }} delay=30
+      #   become: yes
 
-      - name: Run a script to disable setup wizard
-        jenkins_script:
-          script: |
-            import static jenkins.model.Jenkins.instance as jenkins
-            import jenkins.install.InstallState
-            if (!jenkins.installState.isSetupComplete()) {
-              InstallState.INITIAL_SETUP_COMPLETED.initializeState()
-            }
-          user: "{{ jenkins_admin_username }}"
-          password: "{{ jenkins_admin_password }}"
+      # - name: Run a script to disable setup wizard
+      #   jenkins_script:
+      #     script: |
+      #       import static jenkins.model.Jenkins.instance as jenkins
+      #       import jenkins.install.InstallState
+      #       if (!jenkins.installState.isSetupComplete()) {
+      #         InstallState.INITIAL_SETUP_COMPLETED.initializeState()
+      #       }
+      #     user: "{{ jenkins_admin_username }}"
+      #     password: "{{ jenkins_admin_password }}"
 
-      - name: Get Jenkins client Jar file
-        get_url:
-          url: http://{{ jenkins_hostname }}:{{ jenkins_http_port }}/jnlpJars/jenkins-cli.jar
-          dest: /root/
-          mode: 755
-        become: yes
+      # - name: Get Jenkins client Jar file
+      #   get_url:
+      #     url: http://{{ jenkins_hostname }}:{{ jenkins_http_port }}/jnlpJars/jenkins-cli.jar
+      #     dest: /root/
+      #     mode: 755
+      #   become: yes
 
       - name: Install Jenkins Plugins
         jenkins_plugin:
@@ -194,3 +199,10 @@
           host: "{{ jenkins_hostname }}"
           port: "{{ jenkins_http_port }}"
           delay: 30
+
+      - name: Copy testPrioritization.js
+        copy:
+          src: testPrioritization.js
+          dest: "{{ jenkins_home }}/workspace/"
+          mode: 0755
+          owner: jenkins
