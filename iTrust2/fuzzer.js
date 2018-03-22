@@ -37,40 +37,45 @@ const fileFuzzer = (filePath) => {
         let freq = 1 - desiredFreq;
 
         if( rnd > freq && !line.match(/@/) && !line.match(/\\/))
-            line = line.replace(/(\"[\w\s]+\")/g, '"sampletext"')
+            line = line.replace(/(\"[\w\s]+\")/g, '"sampletext"');
 
-        rnd = Math.random()
+        rnd = Math.random();
 
         if ( !line.match(/<.+>/) && (line.match(/while/) || line.match(/if/)) ) {
             if ( rnd > freq ) 
-                line = line.replace('<', '>')
+                line = line.replace('<', '>');
             else
-                line = line.replace('>', '<')
+                line = line.replace('>', '<');
         }
 
-        rnd = Math.random()
+        rnd = Math.random();
 
-        if ( rnd > 0 && line.match(/![a-zA-Z]/g)) {
+        if ( rnd > freq && line.match(/![a-zA-Z]/g)) {
             //console.log("line before: %s\n", line);
             line = line.replace(/![a-zA-Z]/g, (matchedString, offset, line) => {
                 //console.log("File %s having %s replaced", filePath, matchedString);
                 return matchedString.slice(1);
             });
         }
+        
+        rnd = Math.random();
 
-        if(rnd > freq)
-            line = line.replace(/==/g, '!=')
-        else
-            line = line.replace(/!=/g, '==')       
-    
+        if(rnd > freq) {
+            var tmpRnd = Math.random();
+            if ( tmpRnd > 0.5 )
+                line = line.replace(/==/g, '!=');
+            else
+                line = line.replace(/!=/g, '==');
+        }
+
         if(line != '\r' && line != '\n' && line != '')
-            line += '\n'
+            line += '\n';
 
         fs.appendFileSync(filePath, line, {encoding:'utf8'});
     })
 }
 const commitFuzzer = (master_sha1, n) => {
-    child_process.execSync(`git stash && git checkout fuzzer && git checkout stash -- . && git commit -am "Commit Number ${n}: Fuzzing master:${master_sha1}" && git push`)
+    child_process.execSync(`git stash && git checkout fuzzer && git checkout stash -- . && git commit -am "Commit Number ${n}: Fuzzing master:${master_sha1}" && git push --force`)
     child_process.execSync('git stash drop');
     let lastCommitSha1 = child_process.execSync(`git rev-parse fuzzer`).toString().trim()
     return lastCommitSha1;
@@ -117,7 +122,7 @@ const mainForFuzzing = (n) => {
 
     for (var i = 1; i <= n; i++) {
         let javaFiles = getJavaFiles(__dirname + '/iTrust2/src/main/java/edu/ncsu/csc/itrust2');
-        //rollbackAndResetCommit(sha1)
+        rollbackAndResetCommit(sha1)
         ///reset(master_sha1);
         javaFiles.forEach(javaFile =>{
             let rnd = Math.random();
@@ -127,11 +132,11 @@ const mainForFuzzing = (n) => {
             if(rnd > freq)
                 fileFuzzer(javaFile);
         })
-        commit(master_sha1,i);
-        revert(sha1);
-        //let lastCommitSha1 = commitFuzzer(master_sha1, i);
+        //commit(master_sha1,i);
+        //revert(sha1);
+        let lastCommitSha1 = commitFuzzer(master_sha1, i);
         //triggerBuild(githubURL, jenkinsIP, jenkinsToken, lastCommitSha1)
     }
 }
 
-mainForFuzzing(2);
+mainForFuzzing(3);
