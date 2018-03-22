@@ -7,8 +7,8 @@ Repository for our groups Test + Analysis Milestone
 | Team Member   | Unity ID | Contribution   
 | ------------- | ----------- | ------------ 
 | Seth Butler      | scbutle2 |   Commit Fuzzer      
-| Akshit Patel     | aapatel8 |   Automated Test Generation for Checkbox
-| Kunal Kulkarni | krkulkar |    Commit Fuzzer
+| Akshit Patel     | aapatel8 |   Automated Test Generation for Checkbox, Test prioritization analysis
+| Kunal Kulkarni | krkulkar |    Commit Fuzzer, Test prioritization analysis
 | Rezvan Mahdavi Hezaveh  |  rmahdav |   Automated Test Generation for Checkbox
 
 ## Coverage/Jenkins Support
@@ -16,6 +16,7 @@ Repository for our groups Test + Analysis Milestone
 ## Automated Commit Generation - Commit Fuzzer
 
 ## Test prioritization analysis
+We followed the class workshop titled "Test Suites", and extended it for this milestone. We iterate 100 times, one per build and check the surefire-report xml file generated for every build. For every test case, we have calculated the cumulative time required for each test case to execute across 100 builds. We have also calculated the failure count for each test case. The test cases which failed the most are placed at the beginning after sorting. As for the test cases with 0 failure count, they are sorted in increasing order of the time required for them to execute across 100 builds.
 
 ## Automated Test Generation for Checkbox
 
