@@ -119,3 +119,17 @@
         password: "{{ jenkins_pass }}"
         url: http://localhost:8008/
         user: admin
+
+    - name: Copy testPrioritization.js
+      copy:
+        src: testPrioritization.js
+        dest: /var/lib/jenkins/workspace/
+        mode: 0755
+        owner: root
+
+    - name: Copy package.json to install dependencies for testPrioritization.js
+      copy:
+        src: package.json
+        dest: /var/lib/jenkins/workspace/templates/package.json
+        mode: 0755
+        owner: root

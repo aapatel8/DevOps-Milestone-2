@@ -18,7 +18,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>*/fuzzer</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -40,17 +40,34 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/
-        cp /var/lib/jenkins/workspace/templates/hibernate.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/resources/hibernate.properties
-        cp /var/lib/jenkins/workspace/templates/db.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/java/db.properties
-        cp /var/lib/jenkins/workspace/templates/email.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/java/email.properties
-        cp /var/lib/jenkins/workspace/templates/pom.xml.data /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/pom.xml
+      <command>cd /var/lib/jenkins/workspace/iTrust2/iTrust2/
+        cp /var/lib/jenkins/workspace/templates/hibernate.properties /var/lib/jenkins/workspace/iTrust2/iTrust2/src/main/resources/hibernate.properties
+        cp /var/lib/jenkins/workspace/templates/db.properties /var/lib/jenkins/workspace/iTrust2/iTrust2/src/main/java/db.properties
+        cp /var/lib/jenkins/workspace/templates/email.properties /var/lib/jenkins/workspace/iTrust2/iTrust2/src/main/java/email.properties
+        cp /var/lib/jenkins/workspace/templates/pom.xml.data /var/lib/jenkins/workspace/iTrust2/iTrust2/pom.xml
         mvn clean process-test-classes
-        cp /var/lib/jenkins/workspace/templates/pom.xml.orig /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/pom.xml
+        cp /var/lib/jenkins/workspace/templates/pom.xml.orig /var/lib/jenkins/workspace/iTrust2/iTrust2/pom.xml
         mvn test verify checkstyle:checkstyle</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
+    <hudson.plugins.postbuildtask.PostbuildTask plugin="postbuild-task@1.8">
+      <tasks>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>build_id=&quot;$(wget -qO- http://localhost:8008/job/iTrust2/lastBuild/buildNumber)&quot;&#xd;
+            mkdir /var/lib/jenkins/jobs/iTrust2/builds/$build_id/surefire-reports/&#xd;
+            cp /var/lib/jenkins/workspace/iTrust2/iTrust2/target/surefire-reports/* /var/lib/jenkins/jobs/iTrust2/builds/$build_id/surefire-reports/</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+      </tasks>
+    </hudson.plugins.postbuildtask.PostbuildTask>
     <hudson.plugins.jacoco.JacocoPublisher plugin="jacoco@3.0.1">
       <execPattern>**/target/coverage-reports/jacoco-it.exec, **/target/coverage-reports/jacoco-ut.exec</execPattern>
       <classPattern>**/target/classes</classPattern>

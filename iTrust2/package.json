@@ -13,8 +13,11 @@
   },
   "dependencies": {
     "aws-sdk": "^2.193.0",
+    "bluebird": "^3.5.0",
+    "hashmap": "^2.3.0",
     "sleep": "^5.1.1",
     "ssh-exec": "^2.0.0",
-    "ssh2-sftp-client": "^2.0.1"
+    "ssh2-sftp-client": "^2.0.1",
+    "xml2js": "^0.4.17"
   }
 }

@@ -10,7 +10,7 @@
       - git
       - maven
 
-    jenkins_java_args: 'JAVA_ARGS="-Djava.awt.headless=true -Djenkins.install.runSetupWizard=false -Xmx1024m"'
+    jenkins_java_args: 'JAVA_ARGS="-Djava.awt.headless=true -Djenkins.install.runSetupWizard=false -Xmx2048m"'
     jenkins_port_args: 'HTTP_PORT=8008'
     jenkins_home: /var/lib/jenkins
     jenkins_hostname: localhost
@@ -199,10 +199,3 @@
           host: "{{ jenkins_hostname }}"
           port: "{{ jenkins_http_port }}"
           delay: 30
-
-      - name: Copy testPrioritization.js
-        copy:
-          src: testPrioritization.js
-          dest: "{{ jenkins_home }}/workspace/"
-          mode: 0755
-          owner: jenkins

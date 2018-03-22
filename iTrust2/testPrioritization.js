@@ -30,13 +30,15 @@ function readResults(result)
 
 async function calculatePriority()
 {
-    for(i = 1; i <= 100; i++){
+    for(i = 1; i <= 101; i++){
        var files = fs.readdirSync('/var/lib/jenkins/jobs/iTrust2/builds/' + i + '/surefire-reports/');
        for (var j in files) {
-         var testReport = '/var/lib/jenkins/jobs/iTrust2/builds/' + i + '/surefire-reports/' + files[j];
-         var contents = fs.readFileSync(testReport)
-         let xml2json = await Bluebird.fromCallback(cb => parser.parseString(contents, cb));
-         readResults(xml2json);
+         if (files[j].includes(".xml")) {
+           var testReport = '/var/lib/jenkins/jobs/iTrust2/builds/' + i + '/surefire-reports/' + files[j];
+           var contents = fs.readFileSync(testReport)
+           let xml2json = await Bluebird.fromCallback(cb => parser.parseString(contents, cb));
+           readResults(xml2json);
+         }
        }        
      }
 
@@ -52,5 +54,5 @@ async function calculatePriority()
      })
 
     array_values.forEach( e => console.log(e));
-    return tests;
+    //return tests;
 }
