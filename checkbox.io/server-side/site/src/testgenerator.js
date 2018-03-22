@@ -169,7 +169,7 @@ function generateTestCases(filepath, routConstraints) {
             content += "             .send(" + collectionsMock[mock].doc + ")\n";
           }
           content += "             .expect(200)\n";
-          content +=  `            .then(response => {
+          content +=  `             .then(response => {
                               done();
                       })
                       .catch(function () {
@@ -179,7 +179,7 @@ function generateTestCases(filepath, routConstraints) {
                   });
               });
           });
-          `;
+          \n`;
           if(mock == 'both1' || mock == 'both2' || mock == 'both3')
           content += "});\n"
         }
