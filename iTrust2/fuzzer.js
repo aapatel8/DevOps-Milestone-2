@@ -51,9 +51,7 @@ const fileFuzzer = (filePath) => {
         rnd = Math.random();
 
         if ( rnd > freq && line.match(/![a-zA-Z]/g)) {
-            //console.log("line before: %s\n", line);
             line = line.replace(/![a-zA-Z]/g, (matchedString, offset, line) => {
-                //console.log("File %s having %s replaced", filePath, matchedString);
                 return matchedString.slice(1);
             });
         }
@@ -85,29 +83,12 @@ const rollbackAndResetCommit = (firstCommitSha1) => {
     child_process.execSync('git checkout ${firstCommitSha1}')
 }
 
-    /*const triggerBuild = (githubURL, jenkinsIP, jenkinsToken, lastCommitsha1) => {
-    try {
-        child_process.execSync('curl "http://' + jenkinsIP + ':8080/git/notifyCommit?url=' + githubURL + '&branches=fuzzer"')
-        console.log('Fuzzer number ${lastCommitsha1} - Succesfully triggered build.')
-    } catch (error) {
-        console.log('Fuzzer number ${lastCommitsha1} - Could not trigger build.')
-    }
-}*/
-
 const rebase = () => {
     child_process.execSync(`git checkout fuzzer && git stash && git rebase --onto master`);
 }
 
 const getSha = () => {
     return child_process.execSync(`git rev-parse fuzzer`).toString().trim();
-}
-
-const commit = (master_sha1, n) => {
-    child_process.execSync(`git commit -am "Commit Number ${n}: Fuzzing master:${master_sha1}" && git push --force`);
-}
-
-const revert = (sha1) => {
-    child_process.execSync(`git revert --no-edit ${sha1}..HEAD`);
 }
 
 const mainForFuzzing = (n) => {
@@ -121,9 +102,8 @@ const mainForFuzzing = (n) => {
     let sha1 = getSha();
 
     for (var i = 1; i <= n; i++) {
-        let javaFiles = getJavaFiles(__dirname + '/iTrust2/src/main/java/edu/ncsu/csc/itrust2');
+        let javaFiles = getJavaFiles(__dirname + '/../../iTrust2/src/main/java/edu/ncsu/csc/itrust2');
         rollbackAndResetCommit(sha1)
-        ///reset(master_sha1);
         javaFiles.forEach(javaFile =>{
             let rnd = Math.random();
             let desiredFreq = 1;
@@ -132,11 +112,8 @@ const mainForFuzzing = (n) => {
             if(rnd > freq)
                 fileFuzzer(javaFile);
         })
-        //commit(master_sha1,i);
-        //revert(sha1);
         let lastCommitSha1 = commitFuzzer(master_sha1, i);
-        //triggerBuild(githubURL, jenkinsIP, jenkinsToken, lastCommitSha1)
     }
 }
 
-mainForFuzzing(3);
+mainForFuzzing(100);
