@@ -29,5 +29,5 @@ In `testgenerator.js` we have created 17 tests for each routes based on its pars
 
 <img width="1343" alt="screen shot 2018-03-22 at 9 21 02 pm" src="https://media.github.ncsu.edu/user/8135/files/d0c875da-2e17-11e8-9d6f-21984e90c084">
 
-You can see detailed coverage screenshots here[https://github.ncsu.edu/scbutle2/csc519-cm-test/tree/master/checkbox.io/checkboxScreenshots] and on screencast.
+You can see detailed coverage screenshots [here](https://github.ncsu.edu/scbutle2/csc519-cm-test/tree/master/checkbox.io/checkboxScreenshots) and on screencast.
 
