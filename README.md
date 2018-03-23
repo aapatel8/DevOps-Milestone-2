@@ -22,6 +22,8 @@ Our fuzzer mostly focused on manipulation of binary and logical expressions such
 ## Test prioritization analysis
 We followed the class workshop titled "Test Suites", and extended it for this milestone. We iterated 100 times, one per build and checked the surefire-report xml file generated for every build. For every test case, we calculated the cumulative time required for each test case to execute across 100 builds. We also calculated the failure count for each test case. The test cases which failed the most are placed at the beginning after sorting. As for the test cases with 0 failure count (or equal failure counts), they are sorted in increasing order of the time required for them to execute across 100 builds. We believe that the most frequently failing test cases result from the cases covering components of the application that depend heavily on state, and/or that have to perform many checks to validate input and state is as expected before proceeding.
 
+Test prioritization results as shown in demo provided in iTrust2 directory.
+
 ## Automated Test Generation for Checkbox
 
 We started by writing tests manually for routes in server.js to find the structure of tests. We used `supertest` to send request to API calls and `mongoose` to have access to database. We have created test data and save them in the database to run tests. We created two Schemas: StudySchema and VoteSchema. We also created two models: StudyModel and VoteModel. We found there is 17 different test structures and called them `collectionsMock` in `testgenerator.js`. The main difference of them is their used collections, passed information to API and passed objects to API.

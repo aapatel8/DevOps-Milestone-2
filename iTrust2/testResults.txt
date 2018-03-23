@@ -1,0 +1,138 @@
+{ totalTime: 6.071999999999998,
+  failureCount: 99,
+  name: 'edu.ncsu.csc.itrust2.unit.PatientTest:testPatientDateOfDeath' }
+{ totalTime: 0.02700000000000001,
+  failureCount: 78,
+  name: 'edu.ncsu.csc.itrust2.unit.PersonnelFormTest:testPersonnelForm' }
+{ totalTime: 0.5980000000000002,
+  failureCount: 56,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPatientTest:testPatientAPI' }
+{ totalTime: 1.7569999999999968,
+  failureCount: 56,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIHospitalTest:testHospitalAPI' }
+{ totalTime: 3.3729999999999962,
+  failureCount: 56,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIUserTest:testUserAPI' }
+{ totalTime: 3.866999999999997,
+  failureCount: 56,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest:testPrescriptionAPI' }
+{ totalTime: 4.213999999999998,
+  failureCount: 56,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPersonnelTest:testPersonnelAPI' }
+{ totalTime: 8.162999999999991,
+  failureCount: 56,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPasswordTest:testValidPasswordChanges' }
+{ totalTime: 0.2320000000000001,
+  failureCount: 55,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIDrugTest:testDrugAPI' }
+{ totalTime: 10.729999999999997,
+  failureCount: 46,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIOfficeVisitTest:testPreScheduledOfficeVisit' }
+{ totalTime: 18.442999999999998,
+  failureCount: 38,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIOfficeVisitTest:testOfficeVisitAPI' }
+{ totalTime: 390.7849999999999,
+  failureCount: 38,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIICDCodeTest:testCodeAPI' }
+{ totalTime: 0.08600000000000003,
+  failureCount: 36,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPatientTest:testGetNonExistentPatient' }
+{ totalTime: 0.75,
+  failureCount: 34,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIUserTest:testGetNonExistentUser' }
+{ totalTime: 0.2710000000000001,
+  failureCount: 33,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPatientTest:testPatientAsPatient' }
+{ totalTime: 2.0459999999999985,
+  failureCount: 32,
+  name: 'edu.ncsu.csc.itrust2.apitest.APILogEntryTest:testLogByDate' }
+{ totalTime: 354.429,
+  failureCount: 32,
+  name: 'edu.ncsu.csc.itrust2.apitest.APILogEntryTest:testLogByDateLarge' }
+{ totalTime: 0.16100000000000006,
+  failureCount: 29,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPersonnelTest:testGetNonExistentPersonnel' }
+{ totalTime: 0.7560000000000003,
+  failureCount: 23,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIHospitalTest:testGetNonExistentHospital' }
+{ totalTime: 10.165,
+  failureCount: 22,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest:testAppointmentRequestAPI' }
+{ totalTime: 0.1740000000000001,
+  failureCount: 20,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIOfficeVisitTest:testDeleteNonExistentOfficeVisit' }
+{ totalTime: 0.6420000000000002,
+  failureCount: 11,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest:testGetNonExistentAppointment' }
+{ totalTime: 0.3040000000000001,
+  failureCount: 10,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIOfficeVisitTest:testGetNonExistentOfficeVisit' }
+{ totalTime: 16.733999999999995,
+  failureCount: 8,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest:testDiagnoses' }
+{ totalTime: 0.009000000000000001,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.HospitalFormTest:testHospitalForm' }
+{ totalTime: 0.011000000000000003,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.ICDCodeTest:testInvalidCodes' }
+{ totalTime: 0.016000000000000004,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.ICDCodeTest:testCodes' }
+{ totalTime: 0.031000000000000007,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.UserTest:testEqualsAndProperties' }
+{ totalTime: 0.08100000000000003,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.EmailUtilTest:testSendEmail' }
+{ totalTime: 0.10200000000000004,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPatientTest:testPatientUnauthenticated' }
+{ totalTime: 0.12600000000000006,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIEnumTest:testEnumAPI' }
+{ totalTime: 0.2380000000000001,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.DomainObjectTest:testCreateDomainObject' }
+{ totalTime: 0.6000000000000003,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest:testDeleteNonExistentAppointment' }
+{ totalTime: 0.9090000000000003,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPasswordTest:testInvalidPasswordChanges' }
+{ totalTime: 1.0430000000000004,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.DomainObjectTest:testDelete' }
+{ totalTime: 1.387,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.PatientTest:testFieldValidation' }
+{ totalTime: 1.5830000000000006,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.EmailUtilTest:testEmail' }
+{ totalTime: 2.701999999999998,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.DomainObjectTest:testRetrieveDomainObject' }
+{ totalTime: 6.2,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest:testCreateBadAppointmentRequest' }
+{ totalTime: 6.390000000000004,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.apitest.APIPasswordTest:testRequestReset' }
+{ totalTime: 6.5040000000000004,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.LogTest:testLogging' }
+{ totalTime: 10.901,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.LockoutTest:testIPLockouts' }
+{ totalTime: 17.80399999999999,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.PasswordChangeTest:testPasswordChangeForm' }
+{ totalTime: 29.799999999999994,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.PasswordChangeTest:testPasswordReset' }
+{ totalTime: 47.12000000000001,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.OfficeVisitTest:testOfficeVisit' }
+{ totalTime: 232.51200000000006,
+  failureCount: 0,
+  name: 'edu.ncsu.csc.itrust2.unit.LockoutTest:testUserLockouts' }
