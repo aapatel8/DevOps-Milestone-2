@@ -40,13 +40,13 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /var/lib/jenkins/workspace/iTrust2/iTrust2/
-        cp /var/lib/jenkins/workspace/templates/hibernate.properties /var/lib/jenkins/workspace/iTrust2/iTrust2/src/main/resources/hibernate.properties
-        cp /var/lib/jenkins/workspace/templates/db.properties /var/lib/jenkins/workspace/iTrust2/iTrust2/src/main/java/db.properties
-        cp /var/lib/jenkins/workspace/templates/email.properties /var/lib/jenkins/workspace/iTrust2/iTrust2/src/main/java/email.properties
-        cp /var/lib/jenkins/workspace/templates/pom.xml.data /var/lib/jenkins/workspace/iTrust2/iTrust2/pom.xml
+      <command>cd /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/
+        cp /var/lib/jenkins/workspace/templates/hibernate.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/resources/hibernate.properties
+        cp /var/lib/jenkins/workspace/templates/db.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/java/db.properties
+        cp /var/lib/jenkins/workspace/templates/email.properties /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/src/main/java/email.properties
+        cp /var/lib/jenkins/workspace/templates/pom.xml.data /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/pom.xml
         mvn clean process-test-classes
-        cp /var/lib/jenkins/workspace/templates/pom.xml.orig /var/lib/jenkins/workspace/iTrust2/iTrust2/pom.xml
+        cp /var/lib/jenkins/workspace/templates/pom.xml.orig /var/lib/jenkins/jobs/iTrust2/workspace/iTrust2/pom.xml
         mvn test verify checkstyle:checkstyle</command>
     </hudson.tasks.Shell>
   </builders>

@@ -1,0 +1,4 @@
+---
+- name: Install and Run iTrust2
+  include: iTrust2.yml
+...

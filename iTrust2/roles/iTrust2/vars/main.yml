@@ -1,0 +1,23 @@
+---
+    mysql_user: jenkins
+    mysql_password: "{{ lookup('env','MYSQL_PASS') }}"
+    email_username: "{{ lookup('env','MAIL_USER') }}"
+    email_password: "{{ lookup('env','MAIL_PASSWORD') }}"
+    jenkins_pass: "{{ lookup('env','JENKINS_PASS') }}"
+
+    packages:
+      - git
+      - default-jdk
+      - maven
+      - mysql-server-5.7
+      - python-mysqldb
+      - nodejs
+      - python-pip
+      - python3-lxml
+      - nodejs
+      - software-properties-common
+
+    pippackages:
+      - python-jenkins
+      - lxml
+...

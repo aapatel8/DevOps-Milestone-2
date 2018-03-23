@@ -93,6 +93,8 @@ function callGetDropletInfo() {
 
 		logger.end();
 
+		sleep.sleep(30);
+
 		console.log("Everything worked!");
 	});
 }

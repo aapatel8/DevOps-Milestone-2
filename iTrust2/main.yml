@@ -1,0 +1,28 @@
+---
+
+# - name: Executing Ansible Role to Create Droplet
+#   hosts:
+#     - localhost
+#   roles:
+#     - Droplet
+
+# - name: Refresh Inventory
+#   hosts:
+#     - localhost
+#   tasks:
+#     - meta: refresh_inventory
+
+# - name: Executing Ansible Role to Setup Jenkins
+#   hosts:
+#     - main
+#   roles:
+#     - Jenkins
+#   become: yes
+
+- name: Executing Ansible Role to Install and Run iTrust2
+  hosts:
+    - main
+  roles:
+    - iTrust2
+  become: yes
+...
