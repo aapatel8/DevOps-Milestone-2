@@ -12,6 +12,7 @@ Repository for our groups Test + Analysis Milestone
 | Rezvan Mahdavi Hezaveh  |  rmahdav |   Automated Test Generation for Checkbox
 
 ## Coverage/Jenkins Support
+Used jacoco-it.exec and jacoco-ut.exec generated in /target/coverage-reports by iTrust to allow Jacoco plugin to create coverage reports on Jenkins as part of iTrust's post build task (as shown in demo).
 
 ## Automated Commit Generation - Commit Fuzzer
 For this portion of the milestone we utilized a NodeJS fuzzing script and git's post-commit feature. In the cloned iTrust directory we placed the fuzzer and the post-commit file in the .git folder. The post-commit was placed in the hooks directory while the fuzzer was placed in a custom scripts folder: ".../iTrust/.git/scripts/fuzzer.js". The fuzzer was placed in the .git folder to prevent repo submission and cluttering of the actual project directory. Our post commit functions by checking what branch a commit was performed on. If the commit was performed on master it beings running the fuzzer script. As the fuzzer runs it will commit to the fuzzer branch which the post-commit will also detect. Since the commit is on the fuzzer branch a notification will be sent to the Jenkins server that a new build should be spawned.
