@@ -36,3 +36,4 @@ In `testgenerator.js` we have created 17 tests for each routes based on its pars
 
 You can see detailed coverage screenshots [here](https://github.ncsu.edu/scbutle2/csc519-cm-test/tree/master/checkbox.io/checkboxScreenshots) and on screencast.
 
+Screencast - https://youtu.be/eL-n-hqvZII
